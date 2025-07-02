@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_background_color">בחר צבע רקע</string>
+    <string name="settings_card_symbol">בחר סמל קלפים</string>
+    <string name="settings_draw_count">בחר מספר קלפים במשיכה</string>
+    <string name="settings_sound">הפעל קול</string>
+</resources>
