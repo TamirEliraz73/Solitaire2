@@ -4,4 +4,11 @@
     <string name="back">חזרה</string>
     <string name="save">שמור</string>
     <string name="press">לחץ</string>
+
+    <string name="yes">כן</string>
+    <string name="no">לא</string>
+    <string name="cancel">ביטול</string>
+
+    <string name="exit_app">יציאה מהאפליקציה</string>
+    <string name="are_you_sure_quit">האם אתה בטוח שאתה רוצה לצאת?</string>
 </resources>

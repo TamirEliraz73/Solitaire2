@@ -6,6 +6,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavHostController
+import com.nls.game.solitaire2.ui.data.strings.StringCommon
 import com.nls.game.solitaire2.ui.dsl.styled.StyledText
 
 @Composable
@@ -18,8 +19,8 @@ fun QuitDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { StyledText("Exit App") },
-        text = { StyledText("Are you sure you want to quit?") },
+        title = { StyledText(StringCommon.EXIT_APP) },
+        text = { StyledText(StringCommon.ARE_YOU_SURE_QUIT) },
         confirmButton = {
             TextButton(
                 onClick = {
@@ -27,12 +28,12 @@ fun QuitDialog(
                     activity?.finish()
                 }
             ) {
-                StyledText("Yes")
+                StyledText(StringCommon.YES)
             }
         },
         dismissButton = {
             TextButton(onClick = onDismiss) {
-                StyledText("Cancel")
+                StyledText(StringCommon.CANCEL)
             }
         }
     )
