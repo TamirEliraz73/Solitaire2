@@ -18,5 +18,6 @@ data class StyleProps(
     val backgroundColor: Color? = null,
     val border: BorderStyle? = null,
     val cornerRadius: CornerRadius? = null,
-    val shadow: ShadowStyle? = null
+    val shadow: ShadowStyle? = null,
+    val width: Int? = null
 )

@@ -1,6 +1,7 @@
 package com.nls.game.solitaire2.ui.dsl.styled
 
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.nls.game.solitaire2.ui.dsl.extensions.withStyle
@@ -42,6 +43,7 @@ fun StyledButton(props: ButtonProps) {
         onClick = props.onClick,
         enabled = props.enabled,
         modifier = Modifier.withStyle(props.style),
-        content = props.content
+        content = props.content,
+        colors = props.colors?: ButtonDefaults.buttonColors()
     )
 }

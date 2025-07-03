@@ -10,7 +10,7 @@ fun NavGraph(navController: NavHostController) {
     NavHost(navController = navController, startDestination = AppRoute.HOME.route) {
         AppRoute.entries.forEach { route ->
             composable(route.route) {
-                route.content(navController)
+                route.content?.let { it1 -> it1(navController) }
             }
         }
     }
